@@ -5,6 +5,8 @@
 }
 :root{
     --primaryCol: #2D31A6;
+    --textCol: rgb(4, 24, 75);
+    --secText: rgb(76, 82, 113);
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -14,18 +16,18 @@ body{
 
 /* banner section design starts here  */
 
-#banner{
+#banner, #services{
     max-width: 1136px;
     margin: 0 auto;
 }
 
 #banner .title{
-    color: rgb(4, 24, 75);
+    color: var(--textCols);
     font-weight: 700;
     line-height: 63px;
 }
 #banner .details{
-    color: rgb(76, 82, 113);
+    color: var(--secText);
     font-size: 20px;
     font-weight: 500;
     text-align: left;
@@ -45,7 +47,7 @@ body{
 }
 
 #banner .num{
-    color: rgb(4, 24, 75);
+    color: var(--textCols);
     font-size: 14px;
     font-weight: 700;
     margin-bottom: .2rem;
@@ -66,4 +68,33 @@ body{
     background-color: white;
     width: 100%;
     padding: 1rem;
+}
+
+
+/* services secton starts here  */
+.service-container{
+    background-color: #f4f7ff;
+    margin-top: 1.5rem;
+    padding: 6rem 0;
+}
+
+#services .title{
+    color: var(--textCols);
+    font-weight: 700;
+    line-height: 56px;
+    font-size: 42px;
+}
+
+#services .name-service{
+    color: var(--textCol);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+}
+#services .service-details{
+    margin-top: 1.5rem;
+    line-height: 24px;
+    font-size: 16px;
+    color: var(--secText);
+    font-weight: 400;
 }
