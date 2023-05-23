@@ -1,14 +1,18 @@
-*,::before, ::after{
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --primaryCol: #2D31A6;
     --textCol: rgb(4, 24, 75);
     --secText: rgb(76, 82, 113);
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -16,17 +20,20 @@ body{
 
 /* banner section design starts here  */
 
-#banner, #services{
+#banner,
+#services,
+#location {
     max-width: 1136px;
     margin: 0 auto;
 }
 
-#banner .title{
+#banner .title {
     color: var(--textCols);
     font-weight: 700;
     line-height: 63px;
 }
-#banner .details{
+
+#banner .details {
     color: var(--secText);
     font-size: 20px;
     font-weight: 500;
@@ -35,8 +42,8 @@ body{
     margin: 15px 0;
 }
 
-.primaryBtn{
-    padding:0.5rem 1rem;
+.primaryBtn {
+    padding: 0.5rem 1rem;
     background-color: var(--primaryCol);
     border-radius: 4px;
     outline: none;
@@ -46,22 +53,24 @@ body{
 
 }
 
-#banner .num{
+#banner .num {
     color: var(--textCols);
     font-size: 14px;
     font-weight: 700;
     margin-bottom: .2rem;
 }
-#banner .text{
+
+#banner .text {
     color: rgb(45, 49, 166);
     font-size: 12px;
     font-weight: 500;
 }
 
-#banner .img-con{
+#banner .img-con {
     position: relative;
 }
-#banner .support-con{
+
+#banner .support-con {
     position: absolute;
     bottom: 3rem;
     z-index: 10;
@@ -72,29 +81,77 @@ body{
 
 
 /* services secton starts here  */
-.service-container{
+.service-container {
     background-color: #f4f7ff;
     margin-top: 1.5rem;
     padding: 6rem 0;
 }
 
-#services .title{
+#services .title {
     color: var(--textCols);
     font-weight: 700;
     line-height: 56px;
     font-size: 42px;
 }
 
-#services .name-service{
+#services .name-service {
     color: var(--textCol);
     font-size: 24px;
     font-weight: 400;
     line-height: 27px;
 }
-#services .service-details{
+
+#services .service-details {
     margin-top: 1.5rem;
     line-height: 24px;
     font-size: 16px;
     color: var(--secText);
     font-weight: 400;
 }
+
+
+/* locatio section starts here  */
+#location .loc-title {
+    color: var(--textCol);
+    font-size: 43px;
+    line-height: 56px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#location .loc-sub-title {
+    color: var(--secText);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.select-wrapper {
+    position: relative;
+    width:350px;
+    margin-right: 1rem;
+  }
+  
+  .custom-label {
+    position: absolute;
+    top: -0.7rem;
+    left: .5rem;
+    color: var(--primaryCol);
+    margin: 0;
+    background-color: white;
+    padding: 0 5px;
+  }
+  
+  .custom-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primaryCol);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+  }
+  
+  
