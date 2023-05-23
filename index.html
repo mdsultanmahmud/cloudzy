@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,62 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- linking with tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts linking  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="title">its  working</h1>
-    <h2 class="text-3xl text-green-500">this line is ussing tailwind ccss</h2>
+    <header>
+
+    </header>
+    <main>
+        <!-- banner section starts here  -->
+        <section id="banner" class="grid gap-10 grid-cols-1 md:grid-cols-2 items-center min-h-screen">
+            <div>
+                <h1 class="pri-color text-[2rem] lg:text-[3.1rem] title">The Best Cloud VPS Since 2008!</h1>
+                <p class="details">Instantly create High-Performance Cloud VPS services worldwide with NVMe SSD
+                    storage and 10Gbps connections at a fraction of cost.</p>
+                <button class="primaryBtn">STARTING FROM $4.95 </button>
+            </div>
+            <div class="img-con">
+                <!-- baner img  -->
+                <img src="/assets/banner.webp"  alt="">
+                <div class="shadow-2xl py-4 px-8 rounded items-center support-con">
+                    <div class="flex justify-between items-center">
+                        <!-- support  -->
+                        <div>
+                            <p class="num">12000+</p>
+                            <p class="text">Happy Customers</p>
+                        </div>
+                        <div>
+                            <p class="num">14</p>
+                            <p class="text">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="num">v7 Days</p>
+                            <p class="text">Money-Back Guarantee</p>
+                        </div>
+                        <div>
+                            <p class="num">99.95%</p>
+                            <p class="text">Uptime</p>
+                        </div>
+                        <div>
+                            <p class="num">24/7</p>
+                            <p class="text">Online Support</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- banner section ends here  -->
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
