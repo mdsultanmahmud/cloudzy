@@ -17,12 +17,19 @@ body {
 }
 
 
+/* navbar section starts here  */
+
+
+/* navbar section ends here  */
+
+
 
 /* banner section design starts here  */
 
 #banner,
 #services,
-#location {
+#location,
+#comment {
     max-width: 1136px;
     margin: 0 auto;
 }
@@ -128,13 +135,14 @@ body {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .select-wrapper {
     position: relative;
-    width:350px;
+    width: 350px;
     margin-right: 1rem;
-  }
-  
-  .custom-label {
+}
+
+.custom-label {
     position: absolute;
     top: -0.7rem;
     left: .5rem;
@@ -142,9 +150,9 @@ body {
     margin: 0;
     background-color: white;
     padding: 0 5px;
-  }
-  
-  .custom-select {
+}
+
+.custom-select {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--primaryCol);
@@ -152,6 +160,71 @@ body {
     font-size: 16px;
     color: #333333;
     outline: none;
-  }
-  
-  
+}
+
+/* comment section design  */
+
+#comment{
+    padding:2rem;
+    background-image: url("/assets/testimonial.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 4rem;
+    height: 400px;
+    border-radius: 8px;
+    width: 1000px;
+}
+.comment-container{
+    position: relative;
+}
+.comment-container .comment-title{
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+        line-height: 56px;
+    }
+.swiper{
+    width: 608px;
+    height: 310px;
+    position: absolute;
+    top: 2rem;
+    right: -7rem;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.card{
+    border-radius: 10px;
+    background-color: white;
+    padding: 4rem 3rem;
+}
+.card-text p{
+    color: var(--secText);
+    font-size: 16px;
+    line-height: 24px;
+}
+hr{
+    margin: 2rem 0;
+}
+.img-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.img-content-details{
+    display: flex;
+    align-items: center;
+}
+.img-content-details h1{
+    margin-left: 8px;
+    font-size: 16px;
+    color: var(--textCol);
+    font-weight: 600;
+}
+.img-content i{
+    color: #faaf00;
+    font-size: 18px;
+}
