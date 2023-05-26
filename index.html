@@ -23,11 +23,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="shadow-2xl">
         <!-- navbar section starts here  -->
-        <a href="#">Logo</a>
-
-
+        <a href="#"><img src="/assets/Logo_Navbar.webp" alt=""></a>
         <nav class="navbar">
             <ul>
                 <li><a href="#">Products <i class="fa-sharp fa-solid fa-angle-down"></i></a>
@@ -37,10 +35,10 @@
                         <li><a href="">RDP VPS</a></li>
                         <li><a href="">Forex VPS</a>
                         <li><a href="">Cloud Server</a>
-                        <li><a href="">More</a>
+                        <li><a href="#">More <i class="fa-solid fa-greater-than ml-[45%]"></i></a>
                             <ul>
-                                <li><a href="">inside</a></li>
-                                <li><a href="">inside</a></li>
+                                <li><a href="">MikroTik VPS</a></li>
+                                <li><a href="">Android VPS</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,8 +49,8 @@
         </nav>
         <!-- navbar section ends here  -->
         <div>
-            <button>Login</button>
-            <button>Registration</button>
+            <button class="mr-1 signBtn">SIGN IN</button>
+            <button class="primaryBtn">GET STARTED</button>
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
         </div>
@@ -99,6 +97,273 @@
             </div>
         </section>
         <!-- banner section ends here  -->
+
+        <!-- price quotation section starts here  -->
+        <section id="priceQuotation">
+            <p class="text-[14px] text-[#636c8c] text-center my-4">No Hidden Fees - No Contract</p>
+            <div class="text-center">
+                <span class="btn-container">
+                    <button id="linux" class="active">Linux</button>
+                    <button id="windows">Windows</button>
+                </span>
+            </div>
+            <!-- for linux  -->
+            <div class="linux-container grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-12">
+                <div class="card">
+                    <h2>STARTER</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>1 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>1 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>25 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>1 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$4.95<span>/m</span></p>
+                        <img src="/assets/linux.webp" />
+                    </div>
+                    <a href="#">GET STARTED</a>
+                </div>
+                <div class="card">
+                    <h2>BASIC</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>2 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>2 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>30 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>3 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$9.95<span>/m</span></p>
+                        <img src="/assets/linux.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$7.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+                <div class="card">
+                    <h2>ADVANCED</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>2 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>4 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>60 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>5 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$19.95<span>/m</span></p>
+                        <img src="/assets/linux.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$14.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+                <div class="card professional">
+                    <h1 class="popular">Most Popular</h1>
+                    <h2>PROFESSIONAL</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>4 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>8 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>140 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>7 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$36.95<span>/m</span></p>
+                        <img src="/assets/linux.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$29.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+
+            </div>
+            <!-- for windows  -->
+            <div class="windows-container grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-12">
+                <div class="card">
+                    <h2>BASIC</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>2 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>2 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>30 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>3 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$9.95<span>/m</span></p>
+                        <img src="/assets/windows.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$7.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+                <div class="card">
+                    <h2>ADVANCED</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>2 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>4 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>60 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>5 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$19.95<span>/m</span></p>
+                        <img src="/assets/windows.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$14.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+                <div class="card professional">
+                    <h1 class="popular">Most Popular</h1>
+                    <h2>PROFESSIONAL</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>4 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>8 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>140 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>7 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$36.95<span>/m</span></p>
+                        <img src="/assets/linux.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$29.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+                <div class="card">
+                    <h2>ENTERPRISE</h2>
+                    <h3>CLOUD VPS</h3>
+                    <ul>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>6 vCPU:</strong> Highend 2.9+
+                            GHz</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>16 GB </strong> DDR4 Memory
+                        </li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>250 GB</strong> NVMe/SSD
+                            Storage</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 TB</strong> Bandwidth</li>
+                        <li> <i class="fa-solid fa-check mr-3 text-gray-500"></i> <strong>10 Gbps</strong> Connections
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="flex justify-between items-center py-2 mb-4">
+                        <p class="price">$69.95<span>/m</span></p>
+                        <img src="/assets/windows.webp" />
+                    </div>
+                    <p class="annual-price">or <span>$54.95</span> billed annually</p>
+                    <a href="#">GET STARTED</a>
+                </div>
+            </div>
+        </section>
+        <!-- price quotation section ends here  -->
+
+        <!-- services section stats here  -->
+        <section class="service-container">
+            <div id="services">
+                <div class="flex justify-between items-center">
+                    <h1 class="title"> Our Key Differences</h1>
+                    <button class="primaryBtn">JOIN US NOW <i class="fa-solid fa-arrow-right ml-3"></i></button>
+                </div>
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12">
+                    <div class="shadow-2xl rounded p-6 bg-white">
+                        <div class="flex items-center">
+                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#e8f3fe]  grid place-items-center"><i
+                                    class="fa-sharp fa-solid fa-microchip fa-xl text-blue-500"></i></span>
+                            <h3 class="name-service">AMD EPYC™ <br> Processors</h3>
+                        </div>
+                        <p class="service-details">Powerful AMD EPYC™ processors with high 3.3 GHz turbo speed to boost
+                            your performance beyond your imagination.</p>
+                    </div>
+                    <div class="shadow-2xl rounded p-6 bg-white">
+                        <div class="flex items-center">
+                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#e8f3fe]  grid place-items-center"><i
+                                    class="fa-sharp fa-solid fa-microchip fa-xl"></i></span>
+                            <h3 class="name-service">40Gbps Internet <br> Connection</h3>
+                        </div>
+                        <p class="service-details">All of our servers are connected to a 40 Gbps Internet connection.
+                            There will be no latency/lags with your server connection. </p>
+                    </div>
+                    <div class="shadow-2xl rounded p-6 bg-white">
+                        <div class="flex items-center">
+                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#fdecec] grid place-items-center">
+                                <i class="fa-solid fa-database fa-xl text-red-400"></i>
+                            </span>
+                            <h3 class="name-service">Super Fast Storage</h3>
+                        </div>
+                        <p class="service-details">Enterprise NVMe SSD storage with much higher speed, equipped on all
+                            of our servers. </p>
+                    </div>
+                    <div class="shadow-2xl rounded p-6 bg-white">
+                        <div class="flex items-center">
+                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#fff4e5] grid place-items-center">
+                                <i class="fa-sharp fa-solid fa-bitcoin-sign fa-xl text-yellow-600"></i>
+                            </span>
+                            <h3 class="name-service">Flexible Payment</h3>
+                        </div>
+                        <p class="service-details">Pay with any method you wish! Cloudzy welcomes Bitcoin, Ethereum, and
+                            Monero, as well as PayPal, Mastercard, Visa, and more.</p>
+                    </div>
+                    <div class="shadow-2xl rounded p-6 bg-white">
+                        <div class="flex items-center">
+                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#f3f6ff] grid place-items-center">
+                                <i class="fa-solid fa-credit-card fa-xl text-blue-300"></i>
+                            </span>
+                            <h3 class="name-service">Pay Less</h3>
+                        </div>
+                        <p class="service-details">Get the best Cloud VPS with the most affordable prices in the market
+                            with much better specifications!</p>
+                    </div>
+                    <div class="shadow-2xl rounded p-6 bg-white">
+                        <div class="flex items-center">
+                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#ebf6eb] grid place-items-center">
+                                <i class="fa-sharp fa-light fa-dollar-sign fa-xl fa-bold text-green-500"></i>
+                            </span>
+                            <h3 class="name-service">Full Refund</h3>
+                        </div>
+                        <p class="service-details">We are so confident in our services that we offer a full refund
+                            within 7 days of usage if Cloudzy doesn't suit your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services section ends here  -->
         <!-- location section starts here  -->
         <section>
             <div id="location">
@@ -528,78 +793,6 @@
             </div>
         </section>
         <!-- location section ends here  -->
-
-        <!-- services section stats here  -->
-        <section class="service-container">
-            <div id="services">
-                <div class="flex justify-between items-center">
-                    <h1 class="title"> Our Key Differences</h1>
-                    <button class="primaryBtn">JOIN US NOW <i class="fa-solid fa-arrow-right ml-3"></i></button>
-                </div>
-                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12">
-                    <div class="shadow-2xl rounded p-6 bg-white">
-                        <div class="flex items-center">
-                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#e8f3fe]  grid place-items-center"><i
-                                    class="fa-sharp fa-solid fa-microchip fa-xl text-blue-500"></i></span>
-                            <h3 class="name-service">AMD EPYC™ <br> Processors</h3>
-                        </div>
-                        <p class="service-details">Powerful AMD EPYC™ processors with high 3.3 GHz turbo speed to boost
-                            your performance beyond your imagination.</p>
-                    </div>
-                    <div class="shadow-2xl rounded p-6 bg-white">
-                        <div class="flex items-center">
-                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#e8f3fe]  grid place-items-center"><i
-                                    class="fa-sharp fa-solid fa-microchip fa-xl"></i></span>
-                            <h3 class="name-service">40Gbps Internet <br> Connection</h3>
-                        </div>
-                        <p class="service-details">All of our servers are connected to a 40 Gbps Internet connection.
-                            There will be no latency/lags with your server connection. </p>
-                    </div>
-                    <div class="shadow-2xl rounded p-6 bg-white">
-                        <div class="flex items-center">
-                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#fdecec] grid place-items-center">
-                                <i class="fa-solid fa-database fa-xl text-red-400"></i>
-                            </span>
-                            <h3 class="name-service">Super Fast Storage</h3>
-                        </div>
-                        <p class="service-details">Enterprise NVMe SSD storage with much higher speed, equipped on all
-                            of our servers. </p>
-                    </div>
-                    <div class="shadow-2xl rounded p-6 bg-white">
-                        <div class="flex items-center">
-                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#fff4e5] grid place-items-center">
-                                <i class="fa-sharp fa-solid fa-bitcoin-sign fa-xl text-yellow-600"></i>
-                            </span>
-                            <h3 class="name-service">Flexible Payment</h3>
-                        </div>
-                        <p class="service-details">Pay with any method you wish! Cloudzy welcomes Bitcoin, Ethereum, and
-                            Monero, as well as PayPal, Mastercard, Visa, and more.</p>
-                    </div>
-                    <div class="shadow-2xl rounded p-6 bg-white">
-                        <div class="flex items-center">
-                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#f3f6ff] grid place-items-center">
-                                <i class="fa-solid fa-credit-card fa-xl text-blue-300"></i>
-                            </span>
-                            <h3 class="name-service">Pay Less</h3>
-                        </div>
-                        <p class="service-details">Get the best Cloud VPS with the most affordable prices in the market
-                            with much better specifications!</p>
-                    </div>
-                    <div class="shadow-2xl rounded p-6 bg-white">
-                        <div class="flex items-center">
-                            <span class="mr-3 w-[56px] h-[56px] rounded-full bg-[#ebf6eb] grid place-items-center">
-                                <i class="fa-sharp fa-light fa-dollar-sign fa-xl fa-bold text-green-500"></i>
-                            </span>
-                            <h3 class="name-service">Full Refund</h3>
-                        </div>
-                        <p class="service-details">We are so confident in our services that we offer a full refund
-                            within 7 days of usage if Cloudzy doesn't suit your needs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- services section ends here  -->
-
         <!-- user comments section starts here  -->
         <section>
             <div id="comment">

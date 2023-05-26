@@ -10,21 +10,31 @@
     --primaryCol: #2D31A6;
     --textCol: rgb(4, 24, 75);
     --secText: rgb(76, 82, 113);
+    --shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* breakpoints with tailwind  */
+/* screens: {
+    'tablet': '640px',
+    // => @media (min-width: 640px) { ... }
+
+    'laptop': '1024px',
+    // => @media (min-width: 1024px) { ... }
+
+    'desktop': '1280px',
+    // => @media (min-width: 1280px) { ... } */
 
 /* navbar section starts here  */
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 0px 7%;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,65 +42,83 @@ header{
     width: 100%;
 }
 
-header .navbar ul{
+header .navbar ul {
     list-style: none;
 }
 
-header .navbar ul li{
+header .navbar ul li {
     position: relative;
     float: left;
 
 }
 
-header .navbar ul li a{
-    font-size: 20px;
-    padding: 20px;
+header .navbar ul li a {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px;
     display: block;
+    color: var(--textCol);
+    font-weight: 700;
 }
 
 
-header .navbar ul li ul{
+header .navbar ul li ul {
     position: absolute;
     left: 0;
-    width: 200px;
+    width: 150px;
     background: white;
     display: none;
 }
 
-
-header .navbar ul li ul li{
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+header .navbar ul li ul li a {
+    font-weight: 300;
+    font-size: 14px;
 }
-header .navbar ul li ul li ul{
-    left: 200px;
+
+
+header .navbar ul li ul li {
+    width: 100%;
+}
+
+header .navbar ul li ul li ul {
+    left: 150px;
     top: 0;
 }
 
-header .navbar ul li:focus-within > ul{
+header .navbar ul li:focus-within>ul {
     display: initial;
 }
 
-#menu-bar{
+#menu-bar {
     display: none;
 }
 
-header label{
+header label {
     font-size: 30px;
     cursor: pointer;
     color: black;
     display: none;
 }
-@media(max-width:991px){
-    header{
+
+.signBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: .46px;
+    border: 1px solid var(--primaryCol);
+}
+
+@media(max-width:991px) {
+    header {
         padding: 20px;
     }
 
-    header label{
+    header label {
         display: initial;
     }
 
-    header .navbar{
+    header .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -100,26 +128,30 @@ header label{
         display: none;
     }
 
-    header .navbar ul li{
+    header .navbar ul li {
         width: 100%;
     }
-    header .navbar ul li ul{
+
+    header .navbar ul li ul {
         position: relative;
         width: 100%;
     }
-    header .navbar ul li ul li{
+
+    header .navbar ul li ul li {
         background-color: #eee;
     }
-    header .navbar ul li ul li ul{
+
+    header .navbar ul li ul li ul {
         width: 100%;
         left: 0;
     }
 
-    #menu-bar:checked ~ .navbar{
+    #menu-bar:checked~.navbar {
         display: initial;
     }
-    
+
 }
+
 /* navbar section ends here  */
 
 
@@ -129,7 +161,8 @@ header label{
 #banner,
 #services,
 #location,
-#comment {
+#comment,
+#priceQuotation {
     max-width: 1136px;
     margin: 0 auto;
 }
@@ -186,6 +219,182 @@ header label{
     padding: 1rem;
 }
 
+/* price quotation section design starts here  */
+#priceQuotation{
+   padding: 4rem 0; 
+}
+.btn-container {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+    padding: 1rem 0;
+}
+
+.btn-container button {
+    padding: 1rem 2.4rem;
+    border-radius: 3rem;
+    color: rgb(45, 49, 166);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.btn-container .active {
+    color: white;
+    background: var(--primaryCol);
+}
+
+#priceQuotation .linux-container {
+    display: grid;
+}
+
+#priceQuotation .windows-container {
+    display: none;
+}
+
+
+#priceQuotation .card {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    position: relative;
+    height: 470px;
+}
+
+#priceQuotation h2 {
+    font-size: 14px;
+    color: rgb(45, 49, 166);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+#priceQuotation h3 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    margin:0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#priceQuotation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#priceQuotation li {
+    margin-bottom:10px;
+    color: var(--secText);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+#priceQuotation strong {
+    color: var(--textCol);
+}
+
+#priceQuotation .price {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--textCol);
+    letter-spacing: 1px;
+}
+#priceQuotation .price span{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 24px;
+    font-weight: 500;
+}
+#priceQuotation .annual-price{
+    text-align: center;
+    color: rgb(147, 147, 147);
+    font: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+#priceQuotation .annual-price span{
+    color: var(--secText);
+    font-weight: 700;
+    
+}
+#priceQuotation a {
+    width: 90%;
+    margin: .5rem auto;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(45, 49, 166);
+    border: 1px solid rgb(45, 49, 166);
+    font-size: 16px;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#priceQuotation a:hover {
+    background-color: rgba(45, 49, 166, 0.1);
+}
+
+/* professional card design  */
+.professional{
+    background-color: var(--primaryCol) !important;
+}
+.professional h2{
+    color: white !important;
+}
+.professional h3{
+    color: gray !important;
+}
+.professional li{
+    color: gray !important;
+}
+.professional i, .professional strong, .professional .price{
+    color: white !important;
+}
+.professional .price span{
+    color: gray !important;
+}
+.professional .annual-price span{
+    color: white !important;
+}
+.professional a{
+    width: 90%;
+    margin: .5rem auto;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff7f5c;
+}
+.professional a:hover{
+    background-color: #fa6238 !important;
+}
+
+.popular{
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    padding: .4rem;
+    color: rgb(45, 49, 166);
+    font-weight: 700;
+    background-color: #eaeafc;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 0 0 ;
+    z-index: -1;
+}
+/* price quotation section design ends here  */
 
 /* services secton starts here  */
 .service-container {
@@ -264,8 +473,8 @@ header label{
 
 /* comment section design  */
 
-#comment{
-    padding:2rem;
+#comment {
+    padding: 2rem;
     background-image: url("/assets/testimonial.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -275,56 +484,66 @@ header label{
     border-radius: 8px;
     width: 1000px;
 }
-.comment-container{
+
+.comment-container {
     position: relative;
 }
-.comment-container .comment-title{
+
+.comment-container .comment-title {
     position: absolute;
     top: 6rem;
     left: 1rem;
     color: white;
     font-size: 42px;
     font-weight: 700;
-        line-height: 56px;
-    }
-.swiper{
+    line-height: 56px;
+}
+
+.swiper {
     width: 608px;
     height: 310px;
     position: absolute;
     top: 2rem;
     right: -7rem;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
     background-color: white;
 }
-.card{
+
+.swiper .card {
     border-radius: 10px;
     background-color: white;
     padding: 4rem 3rem;
 }
-.card-text p{
+
+.card-text p {
     color: var(--secText);
     font-size: 16px;
     line-height: 24px;
 }
-hr{
+
+hr {
     margin: 2rem 0;
 }
-.img-content{
+
+.img-content {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
-.img-content-details{
+
+.img-content-details {
     display: flex;
     align-items: center;
 }
-.img-content-details h1{
+
+.img-content-details h1 {
     margin-left: 8px;
     font-size: 16px;
     color: var(--textCol);
     font-weight: 600;
 }
-.img-content i{
+
+.img-content i {
     color: #faaf00;
     font-size: 18px;
 }
