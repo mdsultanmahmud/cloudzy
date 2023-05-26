@@ -22,6 +22,18 @@ windowsBtn.addEventListener("click", function () {
 })
 
 
+// working with vps hosting solutions page 
+
+const accordiansContainer = document.querySelectorAll(".items-container")
+
+accordiansContainer.forEach(accordian =>{
+    // console.log(accordian.classList.contains("active"))
+    accordian.addEventListener("click", function(){
+        accordian.classList.toggle("active")
+    })
+})
+
+
 var swiper = new Swiper(".slide-content", {
     spaceBetween: 30,
     pagination: {

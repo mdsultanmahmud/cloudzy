@@ -162,7 +162,8 @@ header label {
 #services,
 #location,
 #comment,
-#priceQuotation {
+#priceQuotation,
+#vpsHosting {
     max-width: 1136px;
     margin: 0 auto;
 }
@@ -220,9 +221,10 @@ header label {
 }
 
 /* price quotation section design starts here  */
-#priceQuotation{
-   padding: 4rem 0; 
+#priceQuotation {
+    padding: 4rem 0;
 }
+
 .btn-container {
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 3rem;
@@ -272,7 +274,7 @@ header label {
 #priceQuotation h3 {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
-    margin:0;
+    margin: 0;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -285,7 +287,7 @@ header label {
 }
 
 #priceQuotation li {
-    margin-bottom:10px;
+    margin-bottom: 10px;
     color: var(--secText);
     font-size: 14px;
     line-height: 20px;
@@ -303,12 +305,14 @@ header label {
     color: var(--textCol);
     letter-spacing: 1px;
 }
-#priceQuotation .price span{
+
+#priceQuotation .price span {
     color: rgba(0, 0, 0, 0.4);
     font-size: 24px;
     font-weight: 500;
 }
-#priceQuotation .annual-price{
+
+#priceQuotation .annual-price {
     text-align: center;
     color: rgb(147, 147, 147);
     font: 14px;
@@ -316,11 +320,13 @@ header label {
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
-#priceQuotation .annual-price span{
+
+#priceQuotation .annual-price span {
     color: var(--secText);
     font-weight: 700;
-    
+
 }
+
 #priceQuotation a {
     width: 90%;
     margin: .5rem auto;
@@ -342,28 +348,37 @@ header label {
 }
 
 /* professional card design  */
-.professional{
+.professional {
     background-color: var(--primaryCol) !important;
 }
-.professional h2{
+
+.professional h2 {
     color: white !important;
 }
-.professional h3{
+
+.professional h3 {
     color: gray !important;
 }
-.professional li{
+
+.professional li {
     color: gray !important;
 }
-.professional i, .professional strong, .professional .price{
+
+.professional i,
+.professional strong,
+.professional .price {
     color: white !important;
 }
-.professional .price span{
+
+.professional .price span {
     color: gray !important;
 }
-.professional .annual-price span{
+
+.professional .annual-price span {
     color: white !important;
 }
-.professional a{
+
+.professional a {
     width: 90%;
     margin: .5rem auto;
     text-align: center;
@@ -377,11 +392,12 @@ header label {
     transform: translateX(-50%);
     background-color: #ff7f5c;
 }
-.professional a:hover{
+
+.professional a:hover {
     background-color: #fa6238 !important;
 }
 
-.popular{
+.popular {
     position: absolute;
     left: 0;
     top: -2rem;
@@ -391,9 +407,10 @@ header label {
     background-color: #eaeafc;
     width: 100%;
     text-align: center;
-    border-radius: 5px 5px 0 0 ;
+    border-radius: 5px 5px 0 0;
     z-index: -1;
 }
+
 /* price quotation section design ends here  */
 
 /* services secton starts here  */
@@ -403,7 +420,8 @@ header label {
     padding: 6rem 0;
 }
 
-#services .title {
+#services .title,
+#vpsHosting .title {
     color: var(--textCols);
     font-weight: 700;
     line-height: 56px;
@@ -469,6 +487,77 @@ header label {
     font-size: 16px;
     color: #333333;
     outline: none;
+}
+
+/* vps solutions seciton design here  */
+.items-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.items-container .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 2rem 1rem;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+.items-container .item h1{
+    color: var(--textCol);
+    font-size: 20px;
+    font-weight: 500;
+}
+.item-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+.item-details h2{
+    color: var(--textCol);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27px;
+    padding: 1rem;
+}
+.item-details p{
+    color: var(--secText);
+    font-size: 16px;
+    font-weight: 400;
+}
+.item-details a{
+    margin: 1rem;
+    text-transform: uppercase;
+    color: rgb(45, 49, 166);
+    font-weight: 500;
+    background-color:#eaeafc;
+    padding:1rem 1.3rem ;
+    border-radius: 5px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.items-container.active .item-details  {
+    max-height: 300px;
+}
+.items-container i {
+    transition: transform .4s ease-in;
+}
+.items-container.active h1{
+    color: var(--primaryCol);
+    font-weight: 700;
+}
+
+
+.item-details p {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 /* comment section design  */
