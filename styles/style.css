@@ -163,7 +163,8 @@ header label {
 #location,
 #comment,
 #priceQuotation,
-#vpsHosting {
+#vpsHosting,
+#blog {
     max-width: 1136px;
     margin: 0 auto;
 }
@@ -588,7 +589,7 @@ header label {
     line-height: 56px;
 }
 
-.swiper {
+#comment .swiper {
     width: 608px;
     height: 310px;
     position: absolute;
@@ -598,13 +599,13 @@ header label {
     background-color: white;
 }
 
-.swiper .card {
+#comment .swiper .card {
     border-radius: 10px;
     background-color: white;
     padding: 4rem 3rem;
 }
 
-.card-text p {
+#comment .card-text p {
     color: var(--secText);
     font-size: 16px;
     line-height: 24px;
@@ -614,25 +615,99 @@ hr {
     margin: 2rem 0;
 }
 
-.img-content {
+#comment .img-content {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
-.img-content-details {
+#comment .img-content-details {
     display: flex;
     align-items: center;
 }
-
-.img-content-details h1 {
+#comment .img-content-details h1 {
     margin-left: 8px;
     font-size: 16px;
     color: var(--textCol);
     font-weight: 600;
 }
 
-.img-content i {
+#comment .img-content i {
     color: #faaf00;
     font-size: 18px;
+}
+
+/* blog section design here  */
+#blog {
+    padding: 4rem 0;
+}
+.blog-container {
+    display: block;
+    margin: 3rem 0;
+}
+
+.knowledge-container {
+    display: none;
+    margin: 3rem 0;
+}
+
+#blog .card {
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    border-radius: .6rem;
+    transition: all ease-in-out .2s;
+    height: 400px;
+}
+
+#blog .card .card-img-container{
+    padding: .2rem;
+}
+#blog .card .card-img-container img{
+    width: 100%;
+    border-radius: .6rem;
+}
+#blog .card .card-img-container h2{
+    color: var(--textCol);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin:1.2rem 0;
+}
+
+#blog .card-details-container img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: .4rem;
+}
+#blog hr{
+    margin: 1.4rem .3rem;
+}
+#blog .card:hover{
+    background-color: rgba(160, 159, 159, 0.1);
+}
+#blog .card-details-container .name{
+    color: var(--textCol);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#blog .card-details-container .time{
+    color: rgb(147, 147, 147);
+    font-size: 12px;
+    font-weight: 500;
+}
+#blog .view-btn{
+    text-align: center;
+    color:rgb(45, 49, 166);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 2rem 0;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
 }
