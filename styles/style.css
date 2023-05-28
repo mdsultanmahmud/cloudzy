@@ -59,6 +59,7 @@ header .navbar ul li a {
     display: block;
     color: var(--textCol);
     font-weight: 700;
+    text-decoration: none;
 }
 
 
@@ -246,11 +247,11 @@ header label {
     background: var(--primaryCol);
 }
 
-#priceQuotation .linux-container {
+#priceQuotation .linux-container, #priceQuotation .supersonic-container {
     display: grid;
 }
 
-#priceQuotation .windows-container {
+#priceQuotation .windows-container, #priceQuotation .hypersonic-container {
     display: none;
 }
 
@@ -836,4 +837,10 @@ footer .fa-star{
 
 #footer-container{
     position: relative;
+}
+
+#clickme{
+    color: red;
+    font-size:20px;
+    cursor: pointer;
 }

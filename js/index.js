@@ -33,7 +33,7 @@ accordiansContainer.forEach(accordian => {
     })
 })
 
-
+// user commennt slider 
 var swiper = new Swiper(".slide-content", {
     spaceBetween: 30,
     pagination: {
@@ -41,7 +41,6 @@ var swiper = new Swiper(".slide-content", {
         clickable: true,
     },
 });
-
 
 
 // working with payment quotation section 
@@ -68,6 +67,8 @@ knowledgeBtn.addEventListener("click", function () {
     blogContainer.style.display = "none"
 })
 
+
+// blog section slider 
 var swiperTwo = new Swiper(".card-content", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -93,8 +94,6 @@ var swiperTwo = new Swiper(".card-content", {
         }
     }
   });
-
-
 
 const linksContainer = document.querySelectorAll(".link-container")
 linksContainer.forEach(link => {
