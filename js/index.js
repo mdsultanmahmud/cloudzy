@@ -93,3 +93,13 @@ var swiperTwo = new Swiper(".card-content", {
         }
     }
   });
+
+
+
+const linksContainer = document.querySelectorAll(".link-container")
+linksContainer.forEach(link => {
+    console.log(link)
+    link.addEventListener("click", function(){
+        this.classList.toggle("active")
+    })
+})
