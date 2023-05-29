@@ -21,6 +21,16 @@ hypersonicBtn.addEventListener("click", function () {
     hypersonicContainer.style.display = "grid"
 })
 
+// working with why choose linux
+
+const accordiansContainer = document.querySelectorAll(".items-container")
+
+accordiansContainer.forEach(accordian => {
+    // console.log(accordian.classList.contains("active"))
+    accordian.addEventListener("click", function () {
+        accordian.classList.toggle("active")
+    })
+})
 
 
 // user commennt slider 

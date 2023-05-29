@@ -514,7 +514,7 @@ header label {
 .item-details {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease;
+    transition: max-height .5s ease;
 }
 
 .item-details h2{
