@@ -6,7 +6,7 @@
 }
 
 /* about section design starts here  */
-#about .title, #whyLinux .title{
+#about .title, #whyLinux .title, #FAQ .title{
     font-size: 42px;
     font-weight: 700;
     text-align: center;
@@ -39,11 +39,11 @@
 
 
 /* design here why linux  */
-#whyLinux .items-container{
+#whyLinux .items-container, #FAQ .items-container{
     box-shadow: var(--shadow);
-    margin-left: 1rem;
+    margin:0 1rem;
 }
-#whyLinux .items-container .item {
+#whyLinux .items-container .item, #FAQ .items-container .item {
     box-shadow: none ;
     padding: .4rem 1rem;
 }
@@ -66,4 +66,29 @@
     transform: rotate(180deg);
     color: var(--primaryCol);
 
+}
+
+
+/* faq section design starts here  */
+#FAQ .items-container.active .fa-plus {
+    display: none;
+}
+#FAQ .items-container .fa-plus {
+    display: block;
+    padding:.3rem;
+    border-radius: .2rem;
+    background-color: rgba(71, 77, 252,.3);
+    color: var(--primaryCol);
+    font-weight: 700;
+}
+#FAQ .items-container.active .fa-minus {
+    display: block;
+}
+#FAQ .items-container .fa-minus {
+    display: none;
+    padding:.3rem;
+    border-radius: .2rem;
+    background-color: var(--primaryCol);
+    color: white;
+    font-weight: 700;
 }
