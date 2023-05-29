@@ -89,6 +89,45 @@
 }
 
 
+/* favorite section design here  */
+#favorite{
+    background-color: #f4f7ff;
+    padding: 5rem 1rem;
+}
+#favorite .title{
+    color: var(--textCol);
+    font-size: 42px;
+    line-height: 68px;
+    font-weight: 700;
+}
+#favorite .favorite-details{
+    color: var(--secText);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+#favorite .card{
+    padding: 1rem 1.3rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    height: 200px;
+}
+
+#favorite .card h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--textCol);
+    letter-spacing: .3px;
+}
+#favorite .card p{
+        font-size: 16px;
+        color: var(--secText);
+        font-weight: 400;
+        letter-spacing: .3px;
+        margin-top: 2rem;
+}
+
 /* design here why linux  */
 #whyLinux .items-container, #FAQ .items-container{
     box-shadow: var(--shadow);
